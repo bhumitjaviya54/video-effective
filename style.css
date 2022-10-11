@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Nunito:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.content {
+    width: 40%;
+    padding-right: 70px;
+}
+
+.content h4 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #000;
+    margin-top: 10px;
+    position: relative;
+    padding: 2px 15px;
+    display: inline-block;
+    background: #fff;
+    font-weight: 300;
+    transition: .3s;
+}
+
+.content h4::before {
+    content: '';
+    width: 200px;
+    height: 28px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    display: block;
+    z-index: -1;
+    transition: .5s;
+}
+
+.content:hover h4::before {
+    background: #e5a84f;
+    left: 0;
+}
+
+.content:hover h4 {
+    background: transparent;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: 10px;
+    color: #e5a84f;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+video {
+    height: 55%;
+    width: 45%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 70px -12px rgb(83, 83, 83);
+}
